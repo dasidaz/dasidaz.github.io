@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Two Rooms Mobile Reference</title>
     <style>
         body {
@@ -13,19 +13,19 @@
             width: 100%;
         }
         .container {
-            width: 100%; /* Maxed to phone width */
+            width: 100%;
             background-color: white;
-            border-bottom: 2px solid #000;
+            border-bottom: 3px solid #000;
             box-sizing: border-box;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            table-layout: fixed; /* Maintains 5:5 ratio */
+            table-layout: fixed;
         }
         td {
             border: 1px solid #000;
-            padding: 12px 8px; /* Increased padding for touch */
+            padding: 12px 6px;
             text-align: center;
             vertical-align: middle;
             word-wrap: break-word;
@@ -33,27 +33,30 @@
         .blue-header {
             background-color: #0070c0;
             color: white;
-            font-size: 1.1rem; /* Larger for mobile */
+            font-size: 1.1rem;
             font-weight: bold;
+            text-transform: uppercase;
         }
         .red-header {
             background-color: #c00000;
             color: white;
-            font-size: 1.1rem; /* Larger for mobile */
+            font-size: 1.1rem;
             font-weight: bold;
+            text-transform: uppercase;
         }
         .grey-header {
             background-color: #7f7f7f;
             color: white;
             font-size: 1.1rem;
             font-weight: bold;
+            text-transform: uppercase;
         }
         .description {
             background-color: white;
             color: black;
             text-align: left;
             font-family: Arial, sans-serif;
-            font-size: 1rem; /* Larger for mobile readability */
+            font-size: 1rem;
             padding: 15px;
             line-height: 1.4;
         }
@@ -67,8 +70,8 @@
         }
         .hostage-table td {
             font-family: Arial, sans-serif;
-            font-size: 0.9rem;
-            padding: 8px 2px;
+            font-size: 0.85rem;
+            padding: 10px 2px;
         }
         .hostage-header {
             background-color: #eee;
@@ -81,108 +84,137 @@
 <div class="container">
     <table>
         <tr>
-            <td class="blue-header">PRESIDENT</td>
-            <td class="red-header">BOMBER</td>
+            <td class="blue-header">PRESIDENT / 대통령</td>
+            <td class="red-header">BOMBER / 폭탄범</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                The Red Team wins if the President and Bomber are in the same room at the end of the game[cite: 3]. The Blue Team wins if the President and Bomber are in different rooms at the end of the game[cite: 4].
+                The Red Team wins if the President and Bomber are in the same room at the end of the game.
+                <br>The Blue Team wins if the President and Bomber are in different rooms at the end of the game.
+                <br><br>
+                대톨령: 블루 팀. 게임 종료 시점에 폭파범과 서로 다른 방에 있으면 블루 팀이 승리합니다.
+                <br>폭파범: 레드 팀. 게임 종료 시점에 대통령과 같은 방에 있으면 레드 팀이 승리합니다.
+
             </td>
         </tr>
         <tr>
             <td class="blue-header">ANGEL</td>
-            <td class="red-header">ANGEL</td>
+            <td class="red-header">천사</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You must always verbally tell the truth[cite: 6]. This means that you are permitted to lie as long as it is not verbally[cite: 6].
+                You must always verbally tell the truth. This means that you are permitted to lie as long as it is not verbally.
+                <br><br>
+                당신은 항상 진실만을 '말'해야합니다. 즉, 말로 하는 게 아니라면 진실이 허용됩니다.
+            </td>
+        </tr>
+                <tr>
+            <td class="blue-header">DEMON</td>
+            <td class="red-header">악마</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You must always verbally tell lies. This means that you are permitted to tell the truth as long as it is not verbally.
+                <br><br>
+                당신은 항상 거짓만을 '말'해야합니다. 즉, 말로 하는 게 아니라면 거짓이 허용됩니다.
             </td>
         </tr>
         <tr>
             <td class="blue-header">BLIND</td>
-            <td class="red-header">BLIND</td>
+            <td class="red-header">장님</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot open your eyes during the game[cite: 9]. Don't worry, it is a short game[cite: 9].
+                You cannot open your eyes during the game. Don't worry, it is a short game.
+                <br><br>
+                게임 중 눈을 뜰 수 없습니다. 걱정 마세요. 게임은 짧습니다.
             </td>
         </tr>
         <tr>
             <td class="blue-header">CLOWN</td>
-            <td class="red-header">CLOWN</td>
+            <td class="red-header">광대</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                Do your best to smile at all times[cite: 11].
-            </td>
-        </tr>
-        <tr>
-            <td class="blue-header">DEMON</td>
-            <td class="red-header">DEMON</td>
-        </tr>
-        <tr>
-            <td colspan="2" class="description">
-                You must always verbally tell lies[cite: 15]. This means that you are permitted to tell the truth as long as it is not verbally[cite: 15, 16].
+                Do your best to smile at all times.
+                <br><br>
+                항상 웃으세요
             </td>
         </tr>
         <tr>
             <td class="blue-header">MIME</td>
-            <td class="red-header">MIME</td>
+            <td class="red-header">마임</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot talk[cite: 18]. Do your best to not make any noise[cite: 18].
+                You cannot talk. Do your best to not make any noise.
+                <br><br>
+                말을 할 수 없습니다. 어떤 소리도 내지 않도록 최선을 다하세요.
             </td>
         </tr>
         <tr>
             <td class="blue-header">SHY GUY</td>
-            <td class="red-header">SHY GUY</td>
+            <td class="red-header">부끄럼쟁이</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot show other players any part of your card[cite: 22]. You are allowed to see other peoples cards[cite: 22].
+                You cannot show other players any part of your card. You are allowed to see other peoples cards.
+                <br><br>
+                다른 플레이어에게 귀하의 카드 어떤 부분도 보여줄 수 없습니다. 하지만 다른 사람의 카드를 보는 것은 허용됩니다.
             </td>
         </tr>
         <tr>
             <td class="blue-header">SPY</td>
-            <td class="red-header">SPY</td>
+            <td class="red-header">스파이</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                This is a special character card that is the color of the opposite team[cite: 24]. This means that the red Spy has an allegiance to the Red Team, but their card is blue[cite: 25].
+                This is a special character card that is the color of the opposite team. This means that the red Spy has an allegiance to the Red Team, but their card is blue.
+                <br><br>
+                반대 팀의 색상을 가진 특수 캐릭터 카드입니다. 예를 들어, 레드 스파이는 레드 팀에 소속되어 있지만 카드는 파란색입니다.
             </td>
         </tr>
         <tr>
             <td class="blue-header">USURPER</td>
-            <td class="red-header">USURPER</td>
+            <td class="red-header">찬탈자</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You have the USURPER power: during any round but the last, you may publicly reveal your card and become the leader[cite: 28]. However, your card must permanently remain publicly revealed for the rest of the game[cite: 29]. This means that you can only use this power once[cite: 30]. You cannot be usurped during the same round in which you used your USURPER power, not even by another Usurper[cite: 31]. If 2 Usurpers use their power in the same room during the same round, whichever Usurper used their power first remains the leader, the other Usurper wasted their power[cite: 32].
+                You have the USURPER power: during any round but the last, you may publicly reveal your card and become the leader. However, your card must permanently remain publicly revealed for the rest of the game. This means that you can only use this power once. You cannot be usurped during the same round in which you used your USURPER power, not even by another Usurper. If 2 Usurpers use their power in the same room during the same round, whichever Usurper used their power first remains the leader, the other Usurper wasted their power.
+                <br><br>
+                당신은 찬탈 능력을 가집니다: 마지막 라운드를 제외한 어떤 라운드에서든 당신의 카드를 공개적으로 밝히고 리더가 될 수 있습니다. 하지만 당신의 카드는 남은 게임 동안 영구적으로 공개된 상태를 유지해야 합니다. 즉, 이 능력은 한 번만 사용할 수 있습니다. 당신이 찬탈 능력을 사용한 동일한 라운드 중에는 다른 찬탈자에 의해서도 찬탈당할 수 없습니다. 만약 같은 라운드에 같은 방에서 2명의 찬탈자가 능력을 사용한다면, 능력을 먼저 사용한 찬탈자가 리더로 유지되며 나머지 찬탈자는 능력을 낭비하게 됩니다.
             </td>
         </tr>
-        <tr><td colspan="2" class="grey-header">AGORAPHOBE</td></tr>
+        <tr><td colspan="2" class="grey-header">AGORAPHOBE / 광장공포증</td></tr>
         <tr>
             <td colspan="2" class="description">
-                You win as long as you never leave your initial room[cite: 39].
+                You win as long as you never leave your initial room.
+                <br><br>
+                처음 배정받은 방을 한 번도 떠나지 않는다면 승리합니다.
             </td>
         </tr>
-        <tr><td colspan="2" class="grey-header">GAMBLER</td></tr>
+        <tr><td colspan="2" class="grey-header">GAMBLER / 도박사</td></tr>
         <tr>
             <td colspan="2" class="description">
-                At the end of the last round, before all players reveal their cards, you must publicly announce which team (Red Team, Blue Team, or neither) you think won the game[cite: 41]. Win only if you are correct[cite: 42].
+                At the end of the last round, before all players reveal their cards, you must publicly announce which team (Red Team, Blue Team, or neither) you think won the game. Win only if you are correct.
+                <br><br>
+                마지막 라운드가 끝나고 모든 플레이어가 카드를 공개하기 전, 어느 팀(레드 팀, 블루 팀, 혹은 어느 쪽도 아님)이 이겼다고 생각하는지 공개적으로 발표해야 합니다. 정답을 맞힌 경우에만 승리합니다.
             </td>
         </tr>
-        <tr><td colspan="2" class="grey-header">HOT POTATO</td></tr>
+        <tr><td colspan="2" class="grey-header">HOT POTATO / 뜨거운 감자</td></tr>
         <tr>
             <td colspan="2" class="description">
-                You have the HOT POTATO power: any player that card shares with you immediately trades cards with you[cite: 44]. If you colour share, you don't swap cards[cite: 45]. You and the other player assume roles of your newly acquired cards[cite: 45]. Whoever has the Hot Potato loses at the end of the game[cite: 46].
+                You have the HOT POTATO power: any player that card shares with you immediately trades cards with you. If you colour share, you don't swap cards. You and the other player assume roles of your newly acquired cards. Whoever has the Hot Potato loses at the end of the game. Note - When in play, make sure to share cards where no one can see you. You don't want to end up with the hot potato, and everyone knowing that you have it! If you have passed the hot potato onto someone, you are not allowed to warn others that they have it.
+                <br><br>
+                당신은 뜨거운 감자를 가지고 있습니다: 당신과 "카드 공유"를 하는 모든 플레이어는 즉시 당신과 카드를 교환해야 합니다. "색 공유"를 할 경우에는 카드를 교환하지 않습니다. 당신과 상대방은 새로 획득한 카드의 역할을 맡게 됩니다. 게임 종료 시점에 "뜨거운 감자"카드를 소지한 사람은 게임에서 패배합니다. 주의: 이 역할이 게임에 포함된 경우, 아무도 볼 수 없는 곳에서 카드를 교환해야 합니다. 당신이 다른 사람에게 뜨거운 감자를 넘겼다면, 그 사람이 그걸 가지고 있다는 사실을 다른 사람들에게 알려서는 안 됩니다.
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">M16</td></tr>
         <tr>
             <td colspan="2" class="description">
-                You win if you card share with the Bomber and the President before the end of the game[cite: 54].
+                You win if you card share with the Bomber and the President before the end of the game.
+                <br><br>
+                당신은 폭파범 및 대통령 양쪽과 "카드 공유"를 해야합니다.
             </td>
         </tr>
         <tr>
@@ -191,16 +223,22 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You win if you are in the same room as each other and the Bomber at the end of the game[cite: 52].
+                You win if you are in the same room as each other and the Bomber at the end oㅓf the game.
+                <br><br>
+                게임 종료 시점에 두 사람이 같은 방에 있고 폭파범도 같은 방에 있으면 승리합니다.
             </td>
         </tr>
         <tr>
-            <td class="grey-header">SURVIVOR</td>
-            <td class="grey-header">RIVAL</td>
+            <td class="grey-header">SURVIVOR / 생존자</td>
+            <td class="grey-header">RIVAL / 라이벌</td>
         </tr>
         <tr>
             <td colspan="2" class="description">
-                Survivor wins if they are NOT in the same room as the Bomber at the end of the game[cite: 57]. Rival wins if they are NOT in the same room as the President at the end of the game[cite: 58].
+                Survivor wins if they are NOT in the same room as the Bomber at the end of the game.
+                <br>Rival wins if they are NOT in the same room as the President at the end of the game.
+                <br><br>
+                생존자: 게임 종료 시점에 폭탄병과 같은 방에 있지 않으면 승리합니다.
+                <br>라이벌: 게임 종료 시점에 대통령과 같은 방에 있지 않으면 승리합니다.
             </td>
         </tr>
     </table>
@@ -210,44 +248,69 @@
     <div class="section-title">END OF A ROUND</div>
     <div class="description">
         1. <strong>LEADER SELECTS HOSTAGES</strong>: Room needs to know who is picked. You can't pick yourself.<br>
+        <strong>리더 선택하기</strong>: 방 안의 인원들은 누가 선택되었는지 알아야 하며, 당신은 스스로 선택할 수 없습니다.<br>
         2. <strong>LEADERS MEET</strong>: Between the two rooms without hostages.<br>
+        <strong>리더끼리 접선하기</strong>: 두 방 사이에서 리더끼리 인질 없이 만납니다.<br>
         3. <strong>EXCHANGE HOSTAGES</strong>: Leaders call out their hostages, and they swap rooms.<br>
-        4. <strong>START TIMER & RESUME</strong>: Leaders & hostages return to their rooms, and the timer is started.
+        <strong>리더가 타이머를 시작하기</strong>: 마지막 라운드일 경우, 이 단계를 건너뜁니다.<br>
+        4. <strong>START TIMER & RESUME</strong>: Leaders & hostages return to their rooms, and the timer is started.<br>
+        <strong>인질 교환하기</strong>: 동일한 수의 인질이 교환되어야 합니다.<br>
+        5. <strong>RETURN TO YOUR ROOM</strong>: For more details, see page 9 of the rulebook.<br>
+        <strong>방으로 돌아가기</strong>: 교환한 인질을 데리고 방으로 돌아갑니다.<br>
     </div>
 
     <div class="section-title">NUMBER OF HOSTAGES FOR EACH ROUND</div>
     <table class="hostage-table">
         <tr class="hostage-header">
+            - ONLY 3 ROUNDS & NO COLOUR REVEALS WITHOUT 11 PLAYERS
+        </tr>
+        <tr class="hostage-header">
             <td>PLAYERS</td>
-            <td>RD 1</td>
-            <td>RD 2</td>
-            <td>RD 3</td>
-            <td>RD 4</td>
-            <td>RD 5</td>
+            <td>5 min</td>
+            <td>4 min</td>
+            <td>3 min</td>
+            <td>2 min</td>
+            <td>1 min</td>
         </tr>
         <tr>
-            <td>6-13 </td>
-            <td>2 </td>
-            <td>1 </td>
-            <td>1 </td>
+            <td>6-10</td>
             <td>-</td>
             <td>-</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
         </tr>
         <tr>
-            <td>14-21 </td>
-            <td>3 </td>
-            <td>2 </td>
-            <td>1 </td>
-            <td>1 </td>
-            <td>-</td>
+            <td>11-13</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
         </tr>
         <tr>
-            <td>22+ </td>
-            <td>5 </td>
-            <td>3 </td>
-            <td>2 </td>
-            <td>1 </td>
-            <td>1 </td>
+            <td>14-17</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>18-21</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>22+</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
         </tr>
     </table>
 </div>
