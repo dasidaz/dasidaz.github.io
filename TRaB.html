@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Two Rooms and a Boom - Reference Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Two Rooms and a Boom - Mobile Reference</title>
     <style>
         body {
             font-family: 'Arial Black', Gadget, sans-serif;
             background-color: #f0f0f0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
         }
         .container {
-            width: 800px;
+            width: 100%;
+            max-width: 100%;
             background-color: white;
-            border: 2px solid #000;
-            margin-bottom: 40px;
+            border-bottom: 4px solid #000;
             box-sizing: border-box;
+            margin: 0;
         }
         table {
             width: 100%;
@@ -26,28 +27,29 @@
         }
         td {
             border: 1px solid #000;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
             vertical-align: middle;
+            word-wrap: break-word;
         }
         .blue-header {
             background-color: #0070c0;
             color: white;
             width: 50%;
-            font-size: 1.2em;
+            font-size: 1rem; /* Scalable font */
             font-weight: bold;
         }
         .red-header {
             background-color: #c00000;
             color: white;
             width: 50%;
-            font-size: 1.2em;
+            font-size: 1rem;
             font-weight: bold;
         }
         .grey-header {
             background-color: #7f7f7f;
             color: white;
-            font-size: 1.2em;
+            font-size: 1rem;
             font-weight: bold;
         }
         .description {
@@ -55,21 +57,22 @@
             color: black;
             text-align: left;
             font-family: Arial, sans-serif;
-            font-size: 0.95em;
-            padding: 15px;
-            line-height: 1.4;
+            font-size: 0.9rem;
+            padding: 12px;
+            line-height: 1.3;
         }
         .section-title {
             background-color: #333;
             color: white;
             text-align: center;
             font-weight: bold;
-            padding: 10px;
-            font-size: 1.1em;
+            padding: 8px;
+            font-size: 1rem;
         }
         .hostage-table td {
             font-family: Arial, sans-serif;
-            font-size: 0.9em;
+            font-size: 0.8rem;
+            padding: 5px 2px;
         }
         .hostage-header {
             background-color: #eee;
@@ -87,7 +90,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                The Red Team wins if the President and Bomber are in the same room at the end of the game. The Blue Team wins if the President and Bomber are in different rooms at the end of the game.
+                The Red Team wins if the President and Bomber are in the same room at the end of the game[cite: 3]. The Blue Team wins if the President and Bomber are in different rooms at the end of the game[cite: 4].
             </td>
         </tr>
         <tr>
@@ -96,7 +99,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You must always verbally tell the truth. This means that you are permitted to lie as long as it is not verbally.
+                You must always verbally tell the truth. This means that you are permitted to lie as long as it is not verbally[cite: 6].
             </td>
         </tr>
         <tr>
@@ -105,7 +108,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot open your eyes during the game. Don't worry, it is a short game.
+                You cannot open your eyes during the game. Don't worry, it is a short game[cite: 9].
             </td>
         </tr>
         <tr>
@@ -114,7 +117,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                Do your best to smile at all times.
+                Do your best to smile at all times[cite: 11].
             </td>
         </tr>
         <tr>
@@ -123,7 +126,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You must always verbally tell lies. This means that you are permitted to tell the truth as long as it is not verbally.
+                You must always verbally tell lies. This means that you are permitted to tell the truth as long as it is not verbally[cite: 15, 16].
             </td>
         </tr>
         <tr>
@@ -132,7 +135,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot talk. Do your best to not make any noise.
+                You cannot talk. Do your best to not make any noise[cite: 18].
             </td>
         </tr>
         <tr>
@@ -141,7 +144,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot show other players any part of your card. You are allowed to see other peoples cards.
+                You cannot show other players any part of your card. You are allowed to see other peoples cards[cite: 22].
             </td>
         </tr>
         <tr>
@@ -150,7 +153,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                This is a special character card that is the color of the opposite team. This means that the red Spy has an allegiance to the Red Team, but their card is blue.
+                This is a special character card that is the color of the opposite team. This means that the red Spy has an allegiance to the Red Team, but their card is blue[cite: 24, 25].
             </td>
         </tr>
         <tr>
@@ -159,31 +162,31 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You have the USURPER power: during any round but the last, you may publicly reveal your card and become the leader. However, your card must permanently remain publicly revealed for the rest of the game. This means that you can only use this power once. You cannot be usurped during the same round in which you used your USURPER power, not even by another Usurper. If 2 Usurpers use their power in the same room during the same round, whichever Usurper used their power first remains the leader, the other Usurper wasted their power.
+                You have the USURPER power: during any round but the last, you may publicly reveal your card and become the leader[cite: 28]. However, your card must permanently remain publicly revealed for the rest of the game[cite: 29]. This means that you can only use this power once[cite: 30]. You cannot be usurped during the same round in which you used your USURPER power[cite: 31].
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">AGORAPHOBE</td></tr>
         <tr>
             <td colspan="2" class="description">
-                You win as long as you never leave your initial room.
+                You win as long as you never leave your initial room[cite: 39].
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">GAMBLER</td></tr>
         <tr>
             <td colspan="2" class="description">
-                At the end of the last round, before all players reveal their cards, you must publicly announce which team (Red Team, Blue Team, or neither) you think won the game. Win only if you are correct.
+                At the end of the last round, before all players reveal their cards, you must publicly announce which team you think won the game. Win only if you are correct[cite: 41, 42].
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">HOT POTATO</td></tr>
         <tr>
             <td colspan="2" class="description">
-                You have the HOT POTATO power: any player that card shares with you immediately trades cards with you. If you colour share, you don't swap cards. You and the other player assume roles of your newly acquired cards. Whoever has the Hot Potato loses at the end of the game.
+                Any player that card shares with you immediately trades cards with you[cite: 44]. If you colour share, you don't swap cards[cite: 45]. Whoever has the Hot Potato loses at the end of the game[cite: 46].
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">M16</td></tr>
         <tr>
             <td colspan="2" class="description">
-                You win if you card share with the Bomber and the President before the end of the game.
+                You win if you card share with the Bomber and the President before the end of the game[cite: 54].
             </td>
         </tr>
         <tr>
@@ -192,7 +195,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You win if you are in the same room as each other and the Bomber at the end of the game.
+                You win if you are in the same room as each other and the Bomber at the end of the game[cite: 52].
             </td>
         </tr>
         <tr>
@@ -201,7 +204,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                Survivor wins if they are NOT in the same room as the Bomber at the end of the game. Rival wins if they are NOT in the same room as the President at the end of the game.
+                Survivor wins if they are NOT in the same room as the Bomber at the end of the game[cite: 57]. Rival wins if they are NOT in the same room as the President at the end of the game[cite: 58].
             </td>
         </tr>
     </table>
