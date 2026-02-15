@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Two Rooms and a Boom - Mobile Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Rooms Mobile Reference</title>
     <style>
         body {
             font-family: 'Arial Black', Gadget, sans-serif;
@@ -13,21 +13,19 @@
             width: 100%;
         }
         .container {
-            width: 100%;
-            max-width: 100%;
+            width: 100%; /* Maxed to phone width */
             background-color: white;
-            border-bottom: 4px solid #000;
+            border-bottom: 2px solid #000;
             box-sizing: border-box;
-            margin: 0;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            table-layout: fixed;
+            table-layout: fixed; /* Maintains 5:5 ratio */
         }
         td {
             border: 1px solid #000;
-            padding: 8px;
+            padding: 12px 8px; /* Increased padding for touch */
             text-align: center;
             vertical-align: middle;
             word-wrap: break-word;
@@ -35,21 +33,19 @@
         .blue-header {
             background-color: #0070c0;
             color: white;
-            width: 50%;
-            font-size: 1rem; /* Scalable font */
+            font-size: 1.1rem; /* Larger for mobile */
             font-weight: bold;
         }
         .red-header {
             background-color: #c00000;
             color: white;
-            width: 50%;
-            font-size: 1rem;
+            font-size: 1.1rem; /* Larger for mobile */
             font-weight: bold;
         }
         .grey-header {
             background-color: #7f7f7f;
             color: white;
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: bold;
         }
         .description {
@@ -57,22 +53,22 @@
             color: black;
             text-align: left;
             font-family: Arial, sans-serif;
-            font-size: 0.9rem;
-            padding: 12px;
-            line-height: 1.3;
+            font-size: 1rem; /* Larger for mobile readability */
+            padding: 15px;
+            line-height: 1.4;
         }
         .section-title {
             background-color: #333;
             color: white;
             text-align: center;
             font-weight: bold;
-            padding: 8px;
-            font-size: 1rem;
+            padding: 12px;
+            font-size: 1.1rem;
         }
         .hostage-table td {
             font-family: Arial, sans-serif;
-            font-size: 0.8rem;
-            padding: 5px 2px;
+            font-size: 0.9rem;
+            padding: 8px 2px;
         }
         .hostage-header {
             background-color: #eee;
@@ -99,7 +95,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You must always verbally tell the truth. This means that you are permitted to lie as long as it is not verbally[cite: 6].
+                You must always verbally tell the truth[cite: 6]. This means that you are permitted to lie as long as it is not verbally[cite: 6].
             </td>
         </tr>
         <tr>
@@ -108,7 +104,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot open your eyes during the game. Don't worry, it is a short game[cite: 9].
+                You cannot open your eyes during the game[cite: 9]. Don't worry, it is a short game[cite: 9].
             </td>
         </tr>
         <tr>
@@ -126,7 +122,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You must always verbally tell lies. This means that you are permitted to tell the truth as long as it is not verbally[cite: 15, 16].
+                You must always verbally tell lies[cite: 15]. This means that you are permitted to tell the truth as long as it is not verbally[cite: 15, 16].
             </td>
         </tr>
         <tr>
@@ -135,7 +131,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot talk. Do your best to not make any noise[cite: 18].
+                You cannot talk[cite: 18]. Do your best to not make any noise[cite: 18].
             </td>
         </tr>
         <tr>
@@ -144,7 +140,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You cannot show other players any part of your card. You are allowed to see other peoples cards[cite: 22].
+                You cannot show other players any part of your card[cite: 22]. You are allowed to see other peoples cards[cite: 22].
             </td>
         </tr>
         <tr>
@@ -153,7 +149,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                This is a special character card that is the color of the opposite team. This means that the red Spy has an allegiance to the Red Team, but their card is blue[cite: 24, 25].
+                This is a special character card that is the color of the opposite team[cite: 24]. This means that the red Spy has an allegiance to the Red Team, but their card is blue[cite: 25].
             </td>
         </tr>
         <tr>
@@ -162,7 +158,7 @@
         </tr>
         <tr>
             <td colspan="2" class="description">
-                You have the USURPER power: during any round but the last, you may publicly reveal your card and become the leader[cite: 28]. However, your card must permanently remain publicly revealed for the rest of the game[cite: 29]. This means that you can only use this power once[cite: 30]. You cannot be usurped during the same round in which you used your USURPER power[cite: 31].
+                You have the USURPER power: during any round but the last, you may publicly reveal your card and become the leader[cite: 28]. However, your card must permanently remain publicly revealed for the rest of the game[cite: 29]. This means that you can only use this power once[cite: 30]. You cannot be usurped during the same round in which you used your USURPER power, not even by another Usurper[cite: 31]. If 2 Usurpers use their power in the same room during the same round, whichever Usurper used their power first remains the leader, the other Usurper wasted their power[cite: 32].
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">AGORAPHOBE</td></tr>
@@ -174,13 +170,13 @@
         <tr><td colspan="2" class="grey-header">GAMBLER</td></tr>
         <tr>
             <td colspan="2" class="description">
-                At the end of the last round, before all players reveal their cards, you must publicly announce which team you think won the game. Win only if you are correct[cite: 41, 42].
+                At the end of the last round, before all players reveal their cards, you must publicly announce which team (Red Team, Blue Team, or neither) you think won the game[cite: 41]. Win only if you are correct[cite: 42].
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">HOT POTATO</td></tr>
         <tr>
             <td colspan="2" class="description">
-                Any player that card shares with you immediately trades cards with you[cite: 44]. If you colour share, you don't swap cards[cite: 45]. Whoever has the Hot Potato loses at the end of the game[cite: 46].
+                You have the HOT POTATO power: any player that card shares with you immediately trades cards with you[cite: 44]. If you colour share, you don't swap cards[cite: 45]. You and the other player assume roles of your newly acquired cards[cite: 45]. Whoever has the Hot Potato loses at the end of the game[cite: 46].
             </td>
         </tr>
         <tr><td colspan="2" class="grey-header">M16</td></tr>
@@ -230,28 +226,28 @@
             <td>RD 5</td>
         </tr>
         <tr>
-            <td>6-13</td>
-            <td>2</td>
-            <td>1</td>
-            <td>1</td>
+            <td>6-13 </td>
+            <td>2 </td>
+            <td>1 </td>
+            <td>1 </td>
             <td>-</td>
             <td>-</td>
         </tr>
         <tr>
-            <td>14-21</td>
-            <td>3</td>
-            <td>2</td>
-            <td>1</td>
-            <td>1</td>
+            <td>14-21 </td>
+            <td>3 </td>
+            <td>2 </td>
+            <td>1 </td>
+            <td>1 </td>
             <td>-</td>
         </tr>
         <tr>
-            <td>22+</td>
-            <td>5</td>
-            <td>3</td>
-            <td>2</td>
-            <td>1</td>
-            <td>1</td>
+            <td>22+ </td>
+            <td>5 </td>
+            <td>3 </td>
+            <td>2 </td>
+            <td>1 </td>
+            <td>1 </td>
         </tr>
     </table>
 </div>
