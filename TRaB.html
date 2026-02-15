@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Rooms and a Boom - Reference Sheet</title>
+    <style>
+        body {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            width: 800px;
+            background-color: white;
+            border: 2px solid #000;
+            margin-bottom: 40px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .blue-header {
+            background-color: #0070c0;
+            color: white;
+            width: 50%;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .red-header {
+            background-color: #c00000;
+            color: white;
+            width: 50%;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .grey-header {
+            background-color: #7f7f7f;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .description {
+            background-color: white;
+            color: black;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            padding: 15px;
+            line-height: 1.4;
+        }
+        .section-title {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 1.1em;
+        }
+        .hostage-table td {
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+        }
+        .hostage-header {
+            background-color: #eee;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <table>
+        <tr>
+            <td class="blue-header">PRESIDENT</td>
+            <td class="red-header">BOMBER</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                The Red Team wins if the President and Bomber are in the same room at the end of the game. The Blue Team wins if the President and Bomber are in different rooms at the end of the game.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">ANGEL</td>
+            <td class="red-header">ANGEL</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You must always verbally tell the truth. This means that you are permitted to lie as long as it is not verbally.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">BLIND</td>
+            <td class="red-header">BLIND</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You cannot open your eyes during the game. Don't worry, it is a short game.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">CLOWN</td>
+            <td class="red-header">CLOWN</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                Do your best to smile at all times.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">DEMON</td>
+            <td class="red-header">DEMON</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You must always verbally tell lies. This means that you are permitted to tell the truth as long as it is not verbally.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">MIME</td>
+            <td class="red-header">MIME</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You cannot talk. Do your best to not make any noise.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">SHY GUY</td>
+            <td class="red-header">SHY GUY</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You cannot show other players any part of your card. You are allowed to see other peoples cards.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">SPY</td>
+            <td class="red-header">SPY</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                This is a special character card that is the color of the opposite team. This means that the red Spy has an allegiance to the Red Team, but their card is blue.
+            </td>
+        </tr>
+        <tr>
+            <td class="blue-header">USURPER</td>
+            <td class="red-header">USURPER</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You have the USURPER power: during any round but the last, you may publicly reveal your card and become the leader. However, your card must permanently remain publicly revealed for the rest of the game. This means that you can only use this power once. You cannot be usurped during the same round in which you used your USURPER power, not even by another Usurper. If 2 Usurpers use their power in the same room during the same round, whichever Usurper used their power first remains the leader, the other Usurper wasted their power.
+            </td>
+        </tr>
+        <tr><td colspan="2" class="grey-header">AGORAPHOBE</td></tr>
+        <tr>
+            <td colspan="2" class="description">
+                You win as long as you never leave your initial room.
+            </td>
+        </tr>
+        <tr><td colspan="2" class="grey-header">GAMBLER</td></tr>
+        <tr>
+            <td colspan="2" class="description">
+                At the end of the last round, before all players reveal their cards, you must publicly announce which team (Red Team, Blue Team, or neither) you think won the game. Win only if you are correct.
+            </td>
+        </tr>
+        <tr><td colspan="2" class="grey-header">HOT POTATO</td></tr>
+        <tr>
+            <td colspan="2" class="description">
+                You have the HOT POTATO power: any player that card shares with you immediately trades cards with you. If you colour share, you don't swap cards. You and the other player assume roles of your newly acquired cards. Whoever has the Hot Potato loses at the end of the game.
+            </td>
+        </tr>
+        <tr><td colspan="2" class="grey-header">M16</td></tr>
+        <tr>
+            <td colspan="2" class="description">
+                You win if you card share with the Bomber and the President before the end of the game.
+            </td>
+        </tr>
+        <tr>
+            <td class="grey-header">JULIET</td>
+            <td class="grey-header">ROMEO</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                You win if you are in the same room as each other and the Bomber at the end of the game.
+            </td>
+        </tr>
+        <tr>
+            <td class="grey-header">SURVIVOR</td>
+            <td class="grey-header">RIVAL</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="description">
+                Survivor wins if they are NOT in the same room as the Bomber at the end of the game. Rival wins if they are NOT in the same room as the President at the end of the game.
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="container">
+    <div class="section-title">END OF A ROUND</div>
+    <div class="description">
+        1. <strong>LEADER SELECTS HOSTAGES</strong>: Room needs to know who is picked. You can't pick yourself.<br>
+        2. <strong>LEADERS MEET</strong>: Between the two rooms without hostages.<br>
+        3. <strong>EXCHANGE HOSTAGES</strong>: Leaders call out their hostages, and they swap rooms.<br>
+        4. <strong>START TIMER & RESUME</strong>: Leaders & hostages return to their rooms, and the timer is started.
+    </div>
+
+    <div class="section-title">NUMBER OF HOSTAGES FOR EACH ROUND</div>
+    <table class="hostage-table">
+        <tr class="hostage-header">
+            <td>PLAYERS</td>
+            <td>RD 1</td>
+            <td>RD 2</td>
+            <td>RD 3</td>
+            <td>RD 4</td>
+            <td>RD 5</td>
+        </tr>
+        <tr>
+            <td>6-13</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>14-21</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>22+</td>
+            <td>5</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
